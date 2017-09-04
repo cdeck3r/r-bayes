@@ -20,7 +20,7 @@ Additionally, it provides
 Spin up the container using the command
 
 ```
-docker run -it --rm -p 8888:8888 jupyter/r-notebook
+docker run -it --rm -p 8888:8888 cdeck3r/r-bayes
 ```
 
 For other startup options check out [Jupyter Notebook R Stack](https://github.com/jupyter/docker-stacks/tree/master/r-notebook). 
