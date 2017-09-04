@@ -1,5 +1,5 @@
 # r-bayes
-Jupyter environment made for Bayesian graphical modeling and inferencing
+Jupyter environment made for Bayesian graphical modeling and inferencing.
 
 It is based on [Jupyter Notebook R Stack](https://github.com/jupyter/docker-stacks/tree/master/r-notebook). 
 
