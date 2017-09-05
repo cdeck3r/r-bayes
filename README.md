@@ -1,3 +1,5 @@
+[![Docker Build Statu](https://img.shields.io/docker/build/cdeck3r/r-bayes.svg)]() [![Docker Pulls](https://img.shields.io/docker/pulls/cdeck3r/r-bayes.svg)]() [![](https://images.microbadger.com/badges/image/cdeck3r/r-bayes.svg)]() [![](https://images.microbadger.com/badges/version/cdeck3r/r-bayes.svg)]()
+
 # r-bayes
 Jupyter environment made for Bayesian graphical modeling and inferencing.
 
