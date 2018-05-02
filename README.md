@@ -13,7 +13,7 @@ Additionally, it provides
 * HydeNet
 * gRain
 * gRim
-
+* bnlearn
 
 **Note:** Plots of bayesian nets require you to use Google Chrome. It will not work within Firefox.
 
@@ -22,7 +22,7 @@ Additionally, it provides
 Spin up the container using the command
 
 ```
-docker run -it --rm -p 8888:8888 cdeck3r/r-bayes
+docker run -it --rm -p 8888:8888 cdeck3r/r-bayes:latest
 ```
 
 For other startup options check out [Jupyter Notebook R Stack](https://github.com/jupyter/docker-stacks/tree/master/r-notebook). 
