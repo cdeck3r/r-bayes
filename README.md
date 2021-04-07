@@ -9,9 +9,9 @@ It is based on [Jupyter Notebook R Stack](https://github.com/jupyter/docker-stac
 Additionally, it provides
 
 * jags
-* rjags
-* HydeNet
-* bnlearn
+* [rjags](https://cran.r-project.org/package=rjags)
+* [HydeNet](https://cran.r-project.org/package=HydeNet)
+* [bnlearn](https://www.bnlearn.com/)
 
 ## Basic Usage
 
