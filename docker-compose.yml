@@ -1,0 +1,59 @@
+version: '3'
+
+services:
+  # jupyter R docker image
+  r-bayes:
+    env_file:
+      - .env
+    build: 
+      context: ./Dockerfiles
+      dockerfile: Dockerfile.rbayes
+    container_name: r-bayes
+    image: r-bayes:latest
+    ports: # HOST:CONTAINER
+      - "8008:8888"
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+      - GRANT_SUDO=yes
+    volumes:
+      - log:${APP_ROOT}/log
+      - src:${APP_ROOT}/src
+      - scripts:${APP_ROOT}/scripts
+      - notebooks:/home/jovyan/work
+      - notebooks:${APP_ROOT}/notebooks
+    command: ["start.sh", "jupyter", "lab", "--LabApp.token=''"]
+
+#
+# Volume definition
+# 
+volumes:
+  repo:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${VOL_DIR}/
+      o: bind
+  log:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${VOL_DIR}/log
+      o: bind
+  src:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${VOL_DIR}/src
+      o: bind
+  scripts:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${VOL_DIR}/scripts
+      o: bind
+  notebooks:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${VOL_DIR}/notebooks
+      o: bind
