@@ -41,11 +41,12 @@ RUN	pip3 install \
 #
 # Install R packages for Bayes
 #
-ADD installBayes.sh /tmp/installBayes.sh
 ADD installBayes.R /tmp/installBayes.R
-
-RUN chmod 755 /tmp/installBayes.sh && /tmp/installBayes.sh \
-&& Rscript /tmp/installBayes.R
+RUN conda install -c conda-forge --strict-channel-priority --yes \
+    r-rjags \
+    r-bnlearn \
+    r-tidybayes \
+    && Rscript /tmp/installBayes.R
     
 USER $NB_UID
 
