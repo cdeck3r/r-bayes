@@ -12,6 +12,7 @@ Additionally, it provides
 * [rjags](https://cran.r-project.org/package=rjags)
 * [HydeNet](https://cran.r-project.org/package=HydeNet)
 * [bnlearn](https://www.bnlearn.com/)
+* [tidybayes](https://cran.r-project.org/package=tidybayes)
 
 ## Basic Usage
 
